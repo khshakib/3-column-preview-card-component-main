@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    /* ### Primary */
+
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+
+
+--Transparent-white : hsl(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    background-color: var(--Very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Lexend Deca';
+}
+
+
+.card{
+      
+      width: 55%;
+      display: flex;
+      flex-wrap: wrap;  
+}
+.card-item{
+    padding: 33px;
+    flex-basis: 180px;
+    flex-grow: 1;
+    
+}
+h1{
+color: var(--Very-light-gray);
+margin: 25px 0px;
+font-size: 37px;
+text-transform: uppercase;
+font-family: 'Big Shoulders Display';
+}
+p{
+    font-size: 15px;
+    color: var(--Transparent-white);
+    line-height: 1.6rem;
+    margin-bottom: 100px;
+}
+#card1 {
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0px 0px 10px;
+}
+#card1>a {
+    color: var(--Bright-orange);
+    background: var(--Very-light-gray);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    display: inline-block;
+  
+}
+#card2{
+    background-color: var(--Dark-cyan)
+}
+#card2>a {
+    color: var(--Dark-cyan);
+    background: var(--Very-light-gray);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#card3{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px 10px 10px 0px;
+}
+#card3>a {
+    color: var(--Very-dark-cyan);
+    background: var(--Very-light-gray);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+     margin-bottom: 15px;
+    display: inline-block;
+}
+.button{
+   border: 2px solid white;
+}
+#card1>a:hover,
+#card2>a:hover,
+#card3>a:hover
+{
+    color: var(--Very-light-gray);
+    background: none;
+    border: 2px solid white;  
+}
